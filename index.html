@@ -1,11 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarah Suyat | Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top creamy-nav">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand" href="#">PORTFOLIO</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#creamyNav">
+            ☰
+        </button>
+        <div class="collapse navbar-collapse" id="creamyNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="creamy-hero">
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+
+            <!-- TEXT CONTENT -->
+            <div class="col-md-7 text-md-start text-center order-2 order-md-1">
+                <h1 class="hero-title">
+                    Hello, I'm <span>Sarah</span>
+                </h1>
+                <p class="hero-subtitle">Information Technology Student</p>
+                <p class="hero-desc">
+                    Passionate about web development and graphic design. 
+                    I enjoy turning ideas into visually appealing and functional 
+                    digital experiences while continuously learning new technologies.
+                </p>
+                <a href="#projects" class="btn creamy-btn mt-4">
+                    View My Work →
+                </a>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="col-md-5 text-center order-1 order-md-2 mb-4 mb-md-0">
+                <div class="hero-img-wrapper">
+                    <img src="images/sar.png" class="hero-img" alt="Sarah">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" style="background-color:#f4e1bbb7; padding:80px 0;">
+    <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row align-items-center g-4">
+            <div class="col-md-4 text-center">
+                <img src="images/sar.png" class="about-img" alt="Sarah" 
+                     style="width:250px; height:250px; object-fit:cover; border-radius:50%; box-shadow:0 10px 25px rgba(0,0,0,0.15);">
+            </div>
+            <div class="col-md-8">
+                <div class="about-card" style="background:#fff7f0; padding:25px 30px; border-radius:20px; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
+                    <p>
+                        I am a fourth-year IT student specializing in web development and graphic design. I love combining technical skills with creativity to create visually engaging and functional projects.
+                    </p>
+                    <ul>
+                        <li>Web Development (HTML, CSS, Bootstrap, JS)</li>
+                        <li>Graphic Design (Canva)</li>
+                        <li>Always learning new techniques and technologies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Projects</h2>
+
+        <div id="projectCarousel"
+            class="carousel slide"
+            data-bs-interval="false">
+
+
+            <div class="carousel-inner">
+
+                <!-- SLIDE 1 -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center g-4">
+
+                        <div class="col-md-5">
+                            <a href="https://sarahsuyat.github.io/it35-lab/"
+                               target="_blank"
+                               class="project-card">
+                                <img src="images/ionic.png" alt="">
+                                <h5>Personal Website (Ionic)</h5>
+                                <p>
+                                    Developed a website using the Ionic framework,
+                                    showcasing responsive design and basic functionality.
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col-md-5">
+                            <a href="https://sarahsuyat.github.io/first-iteration-SPA/"
+                               target="_blank"
+                               class="project-card">
+                                <img src="images/Portfolio.png" alt="">
+                                <h5>First Portfolio</h5>
+                                <p>
+                                    My first portfolio project created to practice
+                                    web layout and design structure.
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- SLIDE 2 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center g-4">
+
+                        <div class="col-md-5">
+                            <a href="https://github.com/SarahSuyat/it21c-project"
+                               target="_blank"
+                               class="project-card">
+                                <img src="images/oop.png" alt="">
+                                <h5>OOP Practice Project</h5>
+                                <p>
+                                    A practice project from Object-Oriented Programming,
+                                    focusing on classes and objects.
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="project-card">
+                                <img src="images/Pinning.jpg" alt="">
+                                <h5>Pinning & Tarp Design</h5>
+                                <p>
+                                    A graphic design project showcasing layout,
+                                    typography, and visual presentation.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CONTROLS -->
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#projectCarousel"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#projectCarousel"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- CONTACT -->
+<section id="contact" style="background-color:#d3c4a5; padding:35px 0;">
+    <div class="container text-center">
+        <h2 class="mb-3">Contact Me</h2>
+        <p class="mb-1">Email: suyatsarah519@gmail.com</p>
+        <p class="mb-1">Phone: +63 951 196 0073</p>
+        <p class="mb-0">GitHub | Facebook | Instagram</p>
+    </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="creamy-footer text-center py-3">
+    © 2026 Sarah Suyat
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
