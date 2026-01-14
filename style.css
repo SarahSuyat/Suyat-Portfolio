@@ -102,8 +102,8 @@ a {
 
 /* IMAGE ITSELF */
 .hero-img {
-    height: 200%;         
-    max-height: 120vh;     
+    height: 93%;         
+    max-height: 100vh;     
     width: auto;
     object-fit: cover;
 }
@@ -111,29 +111,91 @@ a {
 
 
 
-/* --- ABOUT --- */
-.creamy-about {
-    background-color: #f0e6d2;
-    padding: 80px 0;
+/* ABOUT SECTION BACKGROUND DESIGN */
+.about-section {
+    position: relative;
+    padding: 50px 0;
+    background: linear-gradient(
+        135deg,
+        #e9dcc5 0%,
+        #efe6d3 40%,
+        #e1d1b0 100%
+    );
+    overflow: hidden;
 }
 
-.about-img {
-    width: 250px;
+/* Decorative shapes */
+.about-section::before,
+.about-section::after {
+    content: "";
+    position: absolute;
     border-radius: 50%;
+    opacity: 0.25;
+    z-index: 0;
+}
+
+/* Top left shape */
+.about-section::before {
+    width: 320px;
+    height: 320px;
+    background: #c8b28a;
+    top: -120px;
+    left: -120px;
+}
+
+/* Bottom right shape */
+.about-section::after {
+    width: 380px;
+    height: 380px;
+    background: #b29a6f;
+    bottom: -150px;
+    right: -150px;
+}
+
+/* Content stays above background */
+.about-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Image */
+.about-image {
+    width: 400px;
+    height: 400px;
     object-fit: cover;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.553);
+    margin-left: 50px;
 }
 
-.about-card {
-    background: #fff7f0;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+/* Text styling */
+.about-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #3f3a2f;
+    margin-left: 100px;
 }
 
-.about-card ul {
-    padding-left: 20px;
+.about-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #4a463b;
+    margin-bottom: 15px;
+    margin-left: 100px;
 }
+
+.about-list {
+    margin-top: 20px;
+    padding-left: 18px;
+    margin-left: 100px;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+    color: #4a463b;
+}
+
 
 
 .projects-section {
